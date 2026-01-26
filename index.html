@@ -2,8 +2,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>lojaescolhascertascr</title>
+  <title>Loja Escolhas Certas CR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Font Awesome para ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
@@ -45,7 +47,7 @@
 
     a.button i { margin-right: 12px; font-size: 20px; }
 
-    /* Botões com cores e hover */
+    /* Cores dos botões e hover */
     a.whatsapp { background: #25D366; }
     a.whatsapp:hover { background: #1ebe5a; transform: scale(1.05); }
 
@@ -61,26 +63,15 @@
     a.amazon { background: #146eb4; }
     a.amazon:hover { background: #0f558f; transform: scale(1.05); }
 
-    .socials {
-      margin-top: 20px;
-    }
+    /* Redes sociais */
+    .socials { margin-top: 20px; }
+    .socials a { margin: 0 10px; font-size: 24px; color: #555; transition: color 0.3s ease, transform 0.3s ease; }
+    .socials a:hover { transform: scale(1.2); color: #111; }
 
-    .socials a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: #555;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
+    /* QR Code */
+    .qr-code { margin-top: 20px; }
 
-    .socials a:hover {
-      transform: scale(1.2);
-      color: #111;
-    }
-
-    .qr-code {
-      margin-top: 20px;
-    }
-
+    /* Responsividade */
     @media (max-width: 500px) {
       .card { padding: 25px 15px; }
       a.button { font-size: 15px; padding: 14px; }
@@ -91,37 +82,41 @@
 </head>
 <body>
   <div class="card">
-    <h1>lojaescolhascertascr</h1>
-    <p>Links oficiais da loja</p>
+    <h1>Loja Escolhas Certas CR</h1>
+    <p>Links oficiais e funil de vendas</p>
 
+    <!-- Botão WhatsApp -->
     <a class="button whatsapp" href="https://wa.me/5586994987819" target="_blank">
       <i class="fab fa-whatsapp"></i> Atendimento WhatsApp
     </a>
 
-    <a class="button loja" href="https://www.lojaescolhascertas.com.br/" target="_blank">
-      <i class="fas fa-store"></i> Loja Oficial
+    <!-- Loja Nuvemshop: escolha entre .com.br ou .com -->
+    <a class="button loja" href="https://lojaescolhascertas.com.br" target="_blank">
+      <i class="fas fa-store"></i> Loja Oficial Nuvemshop
     </a>
 
-    <a class="button shopee" href="#" target="_blank">
+    <!-- Marketplaces -->
+    <a class="button shopee" href="https://shopee.com.br/lojaescolhascertas" target="_blank">
       <i class="fas fa-shopping-cart"></i> Shopee
     </a>
 
-    <a class="button mercado" href="#" target="_blank">
+    <a class="button mercado" href="https://www.mercadolivre.com.br/lojaescolhascertas" target="_blank">
       <i class="fas fa-box"></i> Mercado Livre
     </a>
 
-    <a class="button amazon" href="#" target="_blank">
+    <a class="button amazon" href="https://www.amazon.com.br/shops/lojaescolhascertas" target="_blank">
       <i class="fab fa-amazon"></i> Amazon
     </a>
 
-    <!-- Redes sociais -->
+    <!-- Redes sociais do funil de vendas -->
     <div class="socials">
       <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-video"></i></a> <!-- Kwai -->
     </div>
 
-    <!-- QR Code -->
+    <!-- QR Code direcionando para WhatsApp -->
     <div class="qr-code">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5586994987819" alt="QR Code WhatsApp">
     </div>
