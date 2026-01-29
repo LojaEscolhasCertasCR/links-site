@@ -3,98 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <title>Catálogo | Loja Escolhas Certas CR</title>
-  <meta name="description" content="Catálogo de sandálias rasteiras da Loja Escolhas Certas CR. Compre pelo WhatsApp com pagamento via Pix ou dinheiro.">
+
+  <meta name="description" content="Catálogo de sandálias rasteiras da Loja Escolhas Certas CR. Atendimento pelo WhatsApp. Pagamento via Pix ou dinheiro.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      padding: 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 25px 15px;
       text-align: center;
     }
-    h1 { margin-bottom: 5px; }
-    .info { color: #444; margin-bottom: 20px; font-size: 14px; }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .info {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    main {
+      padding: 30px 15px;
+    }
+
     .produtos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
+
     .produto {
       background: #fff;
+      border-radius: 16px;
       padding: 15px;
-      border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      text-align: center;
     }
+
     .produto img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 14px;
     }
+
     .produto h3 {
-      margin: 10px 0 5px;
+      margin: 12px 0 6px;
       font-size: 18px;
     }
+
     .produto p {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: bold;
+      margin: 5px 0 10px;
     }
+
     .produto a {
       display: inline-block;
-      margin-top: 10px;
       background: #25D366;
       color: #fff;
-      padding: 12px 18px;
-      border-radius: 10px;
+      padding: 12px 20px;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s;
     }
+
     .produto a:hover {
       background: #1ebe5a;
     }
+
+    footer {
+      background: #fff;
+      padding: 20px 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
     .voltar {
-      margin-top: 30px;
       display: inline-block;
+      margin-top: 10px;
       text-decoration: none;
-      color: #111;
       font-weight: bold;
+      color: #111;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Catálogo de Sandálias Rasteiras</h1>
+  <header>
+    <h1>Escolhas Certas CR</h1>
+    <p>Escolhas inteligentes para o seu dia a dia</p>
+  </header>
 
-  <p class="info">
-    📦 Entrega em até 7 dias úteis <br>
-    💳 Pagamento via Pix ou dinheiro <br>
+  <section class="info">
+    📦 Entrega em até <strong>7 dias úteis</strong><br>
+    💳 Pagamento via <strong>Pix ou dinheiro</strong><br>
     💬 Atendimento direto pelo WhatsApp
-  </p>
+  </section>
 
-  <div class="produtos">
+  <main>
+    <div class="produtos">
 
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x300.png?text=Sandália+Rasteira" alt="Sandália Rasteira Confort">
-      <h3>Sandália Rasteira Confort</h3>
-      <p>R$ 59,90</p>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x300.png?text=Sandália+Rasteira" alt="Sandália Rasteira Confort">
+        <h3>Sandália Rasteira Confort</h3>
+        <p>R$ 59,90</p>
 
-      <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Confort.%20Poderia%20me%20informar%20os%20tamanhos%20disponíveis?"
-         target="_blank">
-         Comprar pelo WhatsApp
-      </a>
+        <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Confort.%20Pode%20me%20informar%20os%20tamanhos%20disponíveis?"
+           target="_blank">
+          Comprar pelo WhatsApp
+        </a>
+      </div>
 
-      <small style="display:block; margin-top:10px; color:#666;">
-        Loja de pessoa física. Produtos sujeitos à disponibilidade.
-      </small>
     </div>
+  </main>
 
-  </div>
+  <footer>
+    <p>Loja de pessoa física.</p>
+    <p>Produtos sujeitos à disponibilidade.</p>
+    <p>Atendimento humanizado e responsável.</p>
 
-  <a class="voltar" href="../">⬅ Voltar para a página principal</a>
+    <a class="voltar" href="../">⬅ Voltar para a página principal</a>
+  </footer>
 
 </body>
 </html>
