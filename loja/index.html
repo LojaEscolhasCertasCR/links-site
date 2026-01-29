@@ -74,10 +74,20 @@
       font-size: 18px;
     }
 
+    /* descrição curta do produto */
+    .produto small {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* preço com destaque de cor secundária */
     .produto p {
       font-size: 17px;
       font-weight: bold;
       margin: 5px 0 10px;
+      color: #c0392b; /* cor de destaque; troque conforme sua identidade */
     }
 
     .produto a {
@@ -93,6 +103,14 @@
 
     .produto a:hover {
       background: #1ebe5a;
+    }
+
+    /* selo de confiança abaixo do botão */
+    .produto .selos {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #555;
+      line-height: 1.4;
     }
 
     footer {
@@ -134,17 +152,47 @@
   <main>
     <div class="produtos">
 
+      <!-- PRODUTO 1 INÍCIO -->
       <div class="produto">
         <img src="https://via.placeholder.com/300x300.png?text=Sandália+Rasteira" alt="Sandália Rasteira Confort">
         <h3>Sandália Rasteira Confort</h3>
+        <small>Confortável, leve e ideal para o dia a dia</small>
         <p>R$ 59,90</p>
 
         <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Confort.%20Pode%20me%20informar%20os%20tamanhos%20disponíveis?"
            target="_blank">
           Comprar pelo WhatsApp
         </a>
-      </div>
 
+        <div class="selos">
+          ✔️ Compra segura<br>
+          ✔️ Atendimento humano<br>
+          ✔️ Envio com responsabilidade
+        </div>
+      </div>
+      <!-- PRODUTO 1 FIM -->
+
+      <!-- PRODUTO 2 INÍCIO -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x300.png?text=Sandália+Rasteira+Luxo" alt="Sandália Rasteira Luxo">
+        <h3>Sandália Rasteira Luxo</h3>
+        <small>Design elegante e material resistente</small>
+        <p>R$ 79,90</p>
+
+        <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Luxo.%20Pode%20me%20informar%20os%20tamanhos%20disponíveis?"
+           target="_blank">
+          Comprar pelo WhatsApp
+        </a>
+
+        <div class="selos">
+          ✔️ Compra segura<br>
+          ✔️ Atendimento humano<br>
+          ✔️ Envio com responsabilidade
+        </div>
+      </div>
+      <!-- PRODUTO 2 FIM -->
+
+      <!-- Repita o bloco acima para cada novo produto -->
     </div>
   </main>
 
