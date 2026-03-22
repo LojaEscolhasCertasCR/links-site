@@ -49,18 +49,25 @@
 
     /* Cores dos botões e hover */
     a.whatsapp { background: #25D366; }
-    a.whatsapp:hover { background: #1ebe5a; transform: scale(1.05); }
+    a.whatsapp:hover { background: #1ebe5a; transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.25); }
 
     a.loja { background: #111; }
-    a.loja:hover { background: #333; transform: scale(1.05); }
+    a.loja:hover { background: #333; transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.25); }
 
-     /* Redes sociais */
+    /* Redes sociais */
     .socials { margin-top: 20px; }
     .socials a { margin: 0 10px; font-size: 24px; color: #555; transition: color 0.3s ease, transform 0.3s ease; }
     .socials a:hover { transform: scale(1.2); color: #111; }
 
     /* QR Code */
     .qr-code { margin-top: 20px; }
+
+    /* Prova social visual */
+    .trust-icons { margin-bottom: 15px; font-size: 16px; color: #555; }
+    .trust-icons i { margin-right: 8px; color: #27ae60; }
+
+    /* Urgência */
+    .urgency { color: #e74c3c; font-weight: bold; margin: 10px 0; }
 
     /* Responsividade */
     @media (max-width: 500px) {
@@ -74,7 +81,18 @@
 <body>
   <div class="card">
     <h1>Loja Escolhas Certas CR</h1>
-    <p>✔️ Compra segura | 🚚 Entrega garantida | 💳 Pix ou dinheiro</p>
+    
+    <!-- Prova social visual -->
+    <div class="trust-icons">
+      <i class="fas fa-shield-alt"></i> Compra segura &nbsp; | &nbsp; 
+      <i class="fas fa-truck"></i> Entrega garantida &nbsp; | &nbsp; 
+      <i class="fas fa-credit-card"></i> Pix ou dinheiro
+    </div>
+
+    <p>✔️ Atendimento humanizado e responsável</p>
+
+    <!-- Urgência -->
+    <div class="urgency">⚠️ Estoque limitado! Garanta já a sua sandália.</div>
 
     <!-- Botão WhatsApp -->
     <a class="button whatsapp" href="https://wa.me/5586994987819" target="_blank">
@@ -82,33 +100,43 @@
     </a>
     
     <!-- Catálogo Pronta Entrega -->
-<a class="button loja" href="https://wa.me/c/558694987819" target="_blank">
-  <i class="fas fa-tags"></i> 👡 Ver Catálogo no WhatsApp
-</a>
+    <a class="button loja" href="https://wa.me/5586994987819" target="_blank">
+      <i class="fas fa-tags"></i> 👡 Ver Catálogo no WhatsApp
+    </a>
     
-   <!-- Loja Oficial Nuvemshop -->
-<a class="button loja" href="https://www.lojaescolhascertas.com.br" target="_blank" rel="noopener">
-  <i class="fas fa-store"></i> Loja Oficial Nuvemshop
-</a>
+    <!-- Loja Oficial Nuvemshop -->
+    <a class="button loja" href="https://www.lojaescolhascertas.com.br" target="_blank" rel="noopener">
+      <i class="fas fa-store"></i> Loja Oficial Nuvemshop
+    </a>
 
- <div class="socials">
-  <a href="https://instagram.com/thenoquiotheames01" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://www.facebook.com/profile.php?id=61580253261050" target="_blank">
-    <i class="fab fa-facebook"></i>
-  </a>
-
-  <a href="https://kwai.com/@thenoquiotheames01" target="_blank">
-    <i class="fas fa-video"></i>
-  </a>
-</div>
+    <!-- Redes sociais -->
+    <div class="socials">
+      <a href="https://instagram.com/thenoquiotheames01" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61580253261050" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://kwai.com/@thenoquiotheames01" target="_blank"><i class="fas fa-video"></i></a>
+    </div>
 
     <!-- QR Code direcionando para WhatsApp -->
     <div class="qr-code">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5586994987819" alt="QR Code WhatsApp">
     </div>
   </div>
+
+  <!-- Botão fixo WhatsApp -->
+  <a href="https://wa.me/5586994987819" style="
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:16px;
+    border-radius:50%;
+    font-size:22px;
+    z-index:999;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  ">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
 </body>
 </html>
