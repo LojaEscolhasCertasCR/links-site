@@ -3,206 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>Catálogo | Loja Escolhas Certas CR</title>
-
   <meta name="description" content="Catálogo de sandálias rasteiras da Loja Escolhas Certas CR. Atendimento pelo WhatsApp. Pagamento via Pix ou dinheiro.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background: #111;
-      color: #fff;
-      padding: 25px 15px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    header p {
-      margin-top: 8px;
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    .info {
-      background: #fff;
-      padding: 15px;
-      text-align: center;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    main {
-      padding: 30px 15px;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .produto {
-      background: #fff;
-      border-radius: 16px;
-      padding: 15px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .produto img {
-      width: 100%;
-      border-radius: 14px;
-    }
-
-    .produto h3 {
-      margin: 12px 0 6px;
-      font-size: 18px;
-    }
-
-    /* descrição curta do produto */
-    .produto small {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 13px;
-      color: #666;
-    }
-
-    /* preço com destaque de cor secundária */
-    .produto p {
-      font-size: 17px;
-      font-weight: bold;
-      margin: 5px 0 10px;
-      color: #c0392b; /* cor de destaque; troque conforme sua identidade */
-    }
-
-    .produto a {
-      display: inline-block;
-      background: #25D366;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .produto a:hover {
-      background: #1ebe5a;
-    }
-
-    /* selo de confiança abaixo do botão */
-    .produto .selos {
-      margin-top: 8px;
-      font-size: 12px;
-      color: #555;
-      line-height: 1.4;
-    }
-
-    footer {
-      background: #fff;
-      padding: 20px 15px;
-      text-align: center;
-      font-size: 13px;
-      color: #555;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 6px 0;
-    }
-
-    .voltar {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #111;
-    }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; color: #333; }
+    header { background: #111; color: #fff; padding: 25px 15px; text-align: center; }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin-top: 8px; font-size: 14px; opacity: 0.9; }
+    .info { background: #fff; padding: 15px; text-align: center; font-size: 14px; line-height: 1.6; }
+    main { padding: 30px 15px; }
+    .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
+    .produto { background: #fff; border-radius: 16px; padding: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); text-align: center; }
+    .produto img { width: 100%; border-radius: 14px; }
+    .produto h3 { margin: 12px 0 6px; font-size: 18px; }
+    .produto small { display: block; margin-bottom: 6px; font-size: 13px; color: #666; }
+    .produto p { font-size: 17px; font-weight: bold; margin: 5px 0 10px; color: #c0392b; }
+    .produto a { display: inline-block; background: #25D366; color: #fff; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+    .produto a:hover { background: #1ebe5a; }
+    .produto .selos { margin-top: 8px; font-size: 12px; color: #555; line-height: 1.4; }
+    footer { background: #fff; padding: 20px 15px; text-align: center; font-size: 13px; color: #555; margin-top: 40px; }
+    footer p { margin: 6px 0; }
+    .voltar { display: inline-block; margin-top: 10px; text-decoration: none; font-weight: bold; color: #111; }
   </style>
 </head>
-
 <body>
 
-  <header>
-    <h1>Escolhas Certas CR</h1>
-    <p>Escolhas inteligentes para o seu dia a dia</p>
-  </header>
+<header>
+  <h1>Escolhas Certas CR</h1>
+  <p>Escolhas inteligentes para o seu dia a dia</p>
+</header>
 
-  <section class="info">
-    📦 Entrega em até <strong>7 dias úteis</strong><br>
-    💳 Pagamento via <strong>Pix ou dinheiro</strong><br>
-    💬 Atendimento direto pelo WhatsApp
-  </section>
+<section class="info">
+  📦 Entrega em até <strong>7 dias úteis</strong><br>
+  💳 Pagamento via <strong>Pix ou dinheiro</strong><br>
+  💬 Atendimento direto pelo WhatsApp
+</section>
 
-  <main>
-    <div class="produtos">
-
-      <!-- PRODUTO 1 INÍCIO -->
-      <div class="produto">
-        <img src="imagens/sandalias-pretas.png" alt="sandalias-pretas.png">
-        <h3>Sandália Rasteira Confort</h3>
-        <small>Confortável, leve e ideal para o dia a dia</small>
-        <p>R$ 29,99</p>
-
-        <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Confort.%20Pode%20me%20informar%20os%20tamanhos%20disponíveis?"
-           target="_blank">
-          Comprar pelo WhatsApp
-        </a>
-
-        <div class="selos">
-          ✔️ Compra segura<br>
-          ✔️ Atendimento humano<br>
-          ✔️ Envio com responsabilidade
-        </div>
+<main>
+  <div class="produtos">
+    <!-- Produto 1 -->
+    <div class="produto">
+      <img src="imagens/sandalias-pretas.png" alt="Sandália Rasteira Confort">
+      <h3>Sandália Rasteira Confort</h3>
+      <small>Confortável, leve e ideal para o dia a dia</small>
+      <p>R$ 29,99</p>
+      <a href="https://wa.me/5586994987819?text=Olá!%20Tenho%20interesse%20na%20Sandália%20Rasteira%20Confort" target="_blank">
+        Comprar pelo WhatsApp
+      </a>
+      <div class="selos">
+        ✔️ Compra segura<br>
+        ✔️ Atendimento humano<br>
+        ✔️ Envio com responsabilidade
       </div>
-      <!-- PRODUTO 1 FIM -->
-
-      <!-- PRODUTO 2 INÍCIO -->
-      <div class="produto">
-        <img src="imagens/sandalia-dourada.png" alt="Sandália Rasteira Dourada">
-        <h3>Sandalia Rasteira </h3>
-        <small>Design elegante e material resistente</small>
-        <p>R$ 29,99</p>
-
-        <a href="https://wa.me/5586994987819?text=Olá!%20Vi%20o%20catálogo%20da%20Loja%20Escolhas%20Certas%20CR%20e%20tenho%20interesse%20na%20Sandália%20Rasteira%20Luxo.%20Pode%20me%20informar%20os%20tamanhos%20disponíveis?"
-           target="_blank">
-          Comprar pelo WhatsApp
-        </a>
-
-        <div class="selos">
-          ✔️ Compra segura<br>
-          ✔️ Atendimento humano<br>
-          ✔️ Envio com responsabilidade
-        </div>
-      </div>
-      <!-- PRODUTO 2 FIM -->
-
-      <!-- Repita o bloco acima para cada novo produto -->
     </div>
-  </main>
 
-  <footer>
-    <p>Loja de pessoa física.</p>
-    <p>Produtos sujeitos à disponibilidade.</p>
-    <p>Atendimento humanizado e responsável.</p>
+    <!-- Produto 2 -->
+    <div class="produto">
+      <img src="imagens/sandalia-dourada.png" alt="Sandália Rasteira Luxo">
+      <h3>Sandália Rasteira Luxo</h3>
+      <small>Design elegante e material resistente</small>
+      <p>R$ 29,99</p>
+      <a href="https://wa.me/5586994987819?text=Olá!%20Tenho%20interesse%20na%20Sandália%20Rasteira%20Luxo" target="_blank">
+        Comprar pelo WhatsApp
+      </a>
+      <div class="selos">
+        ✔️ Compra segura<br>
+        ✔️ Atendimento humano<br>
+        ✔️ Envio com responsabilidade
+      </div>
+    </div>
+  </div>
+</main>
 
-    <a class="voltar" href="../">⬅ Voltar para a página principal</a>
-  </footer>
+<footer>
+  <p>Loja de pessoa física.</p>
+  <p>Produtos sujeitos à disponibilidade.</p>
+  <p>Atendimento humanizado e responsável.</p>
+  <a class="voltar" href="../">⬅ Voltar para a página principal</a>
+</footer>
 
 </body>
 </html>
