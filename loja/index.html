@@ -2,110 +2,164 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo | Loja Escolhas Certas CR</title>
-  <meta name="description" content="Catálogo de sandálias rasteiras da Loja Escolhas Certas CR. Atendimento pelo WhatsApp. Pagamento via Pix ou dinheiro.">
+  <title>Loja Escolhas Certas CR | Catálogo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; color: #333; }
-    header { background: #111; color: #fff; padding: 25px 15px; text-align: center; }
-    header h1 { margin: 0; font-size: 28px; }
-    header p { margin-top: 8px; font-size: 14px; opacity: 0.9; }
-    .info { background: #fff; padding: 15px; text-align: center; font-size: 14px; line-height: 1.6; }
-    main { padding: 30px 15px; }
-    .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-    .produto { background: #fff; border-radius: 16px; padding: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #f2f2f2);
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .catalogo { max-width: 1000px; margin: auto; }
+    h1 { color: #111; margin-bottom: 10px; font-size: 28px; }
+    p { color: #555; font-size: 16px; margin-bottom: 25px; }
+    .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .produto {
+      background: #fff;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      text-align: center;
+    }
     .produto:hover { transform: translateY(-5px); }
-    .produto img { width: 100%; border-radius: 14px; }
-    .produto h3 { margin: 12px 0 6px; font-size: 18px; }
-    .produto small { display: block; margin-bottom: 6px; font-size: 13px; color: #666; }
-    .produto p { font-size: 17px; font-weight: bold; margin: 5px 0 10px; color: #c0392b; }
-    .produto a { display: inline-block; background: #25D366; color: #fff; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
-    .produto a:hover { background: #1ebe5a; }
+    .produto img { width: 100%; border-radius: 14px; margin-bottom: 12px; }
+    .produto h3 { margin: 10px 0 5px; font-size: 18px; color: #111; }
+    .produto small { display: block; font-size: 13px; color: #666; margin-bottom: 6px; }
+    .produto .urgency { color: #e74c3c; font-weight: bold; margin: 6px 0; }
+    .produto p { font-size: 17px; font-weight: bold; margin: 5px 10px 10px; color: #c0392b; }
+    .produto a {
+      display: inline-block; background: #25D366; color: #fff;
+      padding: 12px 18px; border-radius: 12px; text-decoration: none;
+      font-weight: bold; transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .produto a:hover {
+      background: #1ebe5a; transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
     .produto .selos { margin-top: 8px; font-size: 12px; color: #555; line-height: 1.4; }
-    footer { background: #fff; padding: 20px 15px; text-align: center; font-size: 13px; color: #555; margin-top: 40px; }
-    footer p { margin: 6px 0; }
-    .voltar { display: inline-block; margin-top: 10px; text-decoration: none; font-weight: bold; color: #111; }
-    /* Botão fixo WhatsApp */
     .whatsapp-fixo {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: #fff;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 22px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 999;
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: #fff; padding: 16px;
+      border-radius: 50%; font-size: 22px; z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-decoration: none;
+    }
+    @media (max-width: 500px) {
+      .produto a { font-size: 15px; padding: 10px 14px; }
+      .produto h3 { font-size: 16px; }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Escolhas Certas CR</h1>
-  <p>Escolhas inteligentes para o seu dia a dia</p>
-</header>
-
-<section class="info">
-  📦 Entrega em até <strong>7 dias úteis</strong><br>
-  💳 Pagamento via <strong>Pix ou dinheiro</strong><br>
-  💬 Atendimento direto pelo WhatsApp
-</section>
-
-<main>
-  <div class="produtos">
-    <!-- Produto 1 -->
-    <div class="produto">
-      <img src="imagens/sandalias-pretas.png" alt="Sandália Rasteira Confort">
-      <h3>Sandália Rasteira Confort</h3>
-      <small>Confortável, leve e ideal para o dia a dia</small>
-      <small>🔥 Mais vendido da semana</small>
-      <small style="color:#e74c3c;">⚠️ Poucas unidades disponíveis</small>
-      <p>R$ 29,99 <span style="font-size:12px;color:#27ae60;">(Promoção)</span></p>
-      <a href="https://wa.me/5586994987819?text=Olá!%20Tenho%20interesse%20na%20Sandália%20Rasteira%20Confort" target="_blank">
-        Comprar pelo WhatsApp
-      </a>
-      <div class="selos">
-        ✔️ Compra segura<br>
-        ✔️ Atendimento humano<br>
-        ✔️ Envio com responsabilidade
+  <div class="catalogo">
+    <h1>Loja Escolhas Certas CR</h1>
+    <p>📦 Entrega em até 7 dias úteis | 💳 Pix ou dinheiro | 💬 Atendimento pelo WhatsApp</p>
+    <div class="produtos">
+      <!-- Produto 1 -->
+      <div class="produto">
+        <img src="imagens/sandalia-preta.png" alt="Sandália Rasteira Confort">
+        <h3>Sandália Rasteira Confort</h3>
+        <small>Confortável, leve e ideal para o dia a dia</small>
+        <small class="urgency">⚠️ Poucas unidades disponíveis!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Confort" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
       </div>
-    </div>
-
-    <!-- Produto 2 -->
-    <div class="produto">
-      <img src="imagens/sandalia-dourada.png" alt="Sandália Rasteira Luxo">
-      <h3>Sandália Rasteira Luxo</h3>
-      <small>Design elegante e material resistente</small>
-      <small>🔥 Mais vendido da semana</small>
-      <small style="color:#e74c3c;">⚠️ Poucas unidades disponíveis</small>
-      <p>R$ 29,99 <span style="font-size:12px;color:#27ae60;">(Promoção)</span></p>
-      <a href="https://wa.me/5586994987819?text=Olá!%20Tenho%20interesse%20na%20Sandália%20Rasteira%20Luxo" target="_blank">
-        Comprar pelo WhatsApp
-      </a>
-      <div class="selos">
-        ✔️ Compra segura<br>
-        ✔️ Atendimento humano<br>
-        ✔️ Envio com responsabilidade
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="imagens/sandalia-dourada.png" alt="Sandália Rasteira Luxo">
+        <h3>Sandália Rasteira Luxo</h3>
+        <small>Design elegante e material resistente</small>
+        <small class="urgency">⚠️ Estoque limitado!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Luxo" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="produto">
+        <img src="imagens/sandalia-rosa.png" alt="Sandália Rasteira Rosa">
+        <h3>Sandália Rasteira Rosa</h3>
+        <small>Leve e feminina para qualquer ocasião</small>
+        <small class="urgency">⚠️ Estoque quase esgotado!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Rosa" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="produto">
+        <img src="imagens/sandalia-branca.png" alt="Sandália Rasteira Branca">
+        <h3>Sandália Rasteira Branca</h3>
+        <small>Clássica e confortável para o dia a dia</small>
+        <small class="urgency">⚠️ Últimas unidades!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Branca" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="produto">
+        <img src="imagens/sandalia-prata.png" alt="Sandália Rasteira Prata">
+        <h3>Sandália Rasteira Prata</h3>
+        <small>Elegante e resistente para passeios e festas</small>
+        <small class="urgency">⚠️ Estoque limitado!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Prata" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="produto">
+        <img src="imagens/sandalia-preto-dourado.png" alt="Sandália Rasteira Preto Dourado">
+        <h3>Sandália Rasteira Preto Dourado</h3>
+        <small>Luxo discreto e confortável</small>
+        <small class="urgency">⚠️ Poucas unidades!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Preto Dourado" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 7 -->
+      <div class="produto">
+        <img src="imagens/sandalia-caramelo.png" alt="Sandália Rasteira Caramelo">
+        <h3>Sandália Rasteira Caramelo</h3>
+        <small>Leve e ideal para o dia a dia</small>
+        <small class="urgency">⚠️ Estoque quase esgotado!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Caramelo" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 8 -->
+      <div class="produto">
+        <img src="imagens/sandalia-marrom.png" alt="Sandália Rasteira Marrom">
+        <h3>Sandália Rasteira Marrom</h3>
+        <small>Clássica e resistente, perfeita para todos os looks</small>
+        <small class="urgency">⚠️ Últimas unidades!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Marrom" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 9 -->
+      <div class="produto">
+        <img src="imagens/sandalia-azul.png" alt="Sandália Rasteira Azul">
+        <h3>Sandália Rasteira Azul</h3>
+        <small>Confortável e sofisticada</small>
+        <small class="urgency">⚠️ Poucas unidades!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Azul" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+      </div>
+      <!-- Produto 10 -->
+      <div class="produto">
+        <img src="imagens/sandalia-verde.png" alt="Sandália Rasteira Verde">
+        <h3>Sandália Rasteira Verde</h3>
+        <small>Leve, confortável e moderna</small>
+        <small class="urgency">⚠️ Estoque limitado!</small>
+        <p>R$ 29,99</p>
+        <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Verde" target="_blank">Comprar pelo WhatsApp</a>
+        <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
       </div>
     </div>
   </div>
-</main>
 
-<footer>
-  <p>Loja de pessoa física.</p>
-  <p>Produtos sujeitos à disponibilidade.</p>
-  <p>Atendimento humanizado e responsável.</p>
-  <a class="voltar" href="../">⬅ Voltar para a página principal</a>
-</footer>
-
-<!-- Botão fixo WhatsApp -->
-<a href="https://wa.me/5586994987819" class="whatsapp-fixo">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
+  <!-- Botão fixo WhatsApp -->
+  <a href="https://wa.me/5586994987819" class="whatsapp-fixo"><i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
