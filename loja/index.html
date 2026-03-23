@@ -6,111 +6,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 30px 15px;
-      text-align: center;
-    }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding:30px 15px; text-align:center; }
     h1 { color:#111; margin-bottom:10px; font-size:28px; }
-    .produtos { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1000px; margin:auto; }
-    .produto {
-      background:#fff; border-radius:18px; padding:20px; box-shadow:0 6px 20px rgba(0,0,0,0.15);
-      transition:transform 0.3s; text-align:center;
-    }
+    .produtos { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1200px; margin:auto; }
+    .produto { background:#fff; border-radius:18px; padding:20px; box-shadow:0 6px 20px rgba(0,0,0,0.15); transition:transform 0.3s; text-align:center; }
     .produto:hover { transform: translateY(-5px); }
-    .produto img { width:100%; border-radius:14px; margin-bottom:12px; }
+    .produto img { width:100%; border-radius:14px; margin-bottom:12px; object-fit:cover; height:250px; }
     .produto h3 { margin:10px 0 5px; font-size:18px; color:#111; }
     .produto small { display:block; font-size:13px; color:#666; margin-bottom:6px; }
     .urgency { color:#e74c3c; font-weight:bold; margin:6px 0; }
     .produto p { font-size:17px; font-weight:bold; margin:5px 0 10px; color:#c0392b; }
-    .produto a {
-      display:inline-block; background:#25D366; color:#fff; padding:12px 18px; border-radius:12px;
-      text-decoration:none; font-weight:bold; transition: all 0.3s;
-    }
+    .produto a { display:inline-block; background:#25D366; color:#fff; padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:bold; transition: all 0.3s; }
     .produto a:hover { background:#1ebe5a; transform:scale(1.05); box-shadow:0 6px 15px rgba(0,0,0,0.25); }
     .selos { margin-top:8px; font-size:12px; color:#555; line-height:1.4; }
-    .whatsapp-fixo {
-      position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff;
-      padding:16px; border-radius:50%; font-size:22px; z-index:999; box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    }
+    .whatsapp-fixo { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:16px; border-radius:50%; font-size:22px; z-index:999; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
     @media (max-width:500px){ .produto a{ font-size:15px; padding:10px 14px; } .produto h3{ font-size:16px; } }
   </style>
 </head>
 <body>
-  <h1>Loja Escolhas Certas CR</h1>
-  <p>📦 Entrega em até 7 dias úteis | 💳 Pix ou dinheiro | 💬 Atendimento pelo WhatsApp</p>
-  <div class="produtos">
 
-    <!-- Produto 1 -->
-    <div class="produto">
-      <img src="imagens/chinela-azul.png" alt="Sandália Rasteira Azul">
-      <h3>Sandália Rasteira Azul</h3>
-      <small>Leve e confortável para o dia a dia</small>
-      <small class="urgency">⚠️ Poucas unidades!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Azul" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
+<h1>Loja Escolhas Certas CR</h1>
+<p>📦 Entrega em até 7 dias úteis | 💳 Pix ou dinheiro | 💬 Atendimento pelo WhatsApp</p>
 
-    <!-- Produto 2 -->
-    <div class="produto">
-      <img src="imagens/chinela-dourada.png" alt="Sandália Rasteira Dourada">
-      <h3>Sandália Rasteira Dourada</h3>
-      <small>Elegante e resistente</small>
-      <small class="urgency">⚠️ Estoque limitado!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Dourada" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
+<div class="produtos">
 
-    <!-- Produto 3 -->
-    <div class="produto">
-      <img src="imagens/chinelo-rosa.png" alt="Sandália Rasteira Rosa">
-      <h3>Sandália Rasteira Rosa</h3>
-      <small>Leve e feminina</small>
-      <small class="urgency">⚠️ Estoque quase esgotado!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Rosa" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
-
-    <!-- Produto 4 -->
-    <div class="produto">
-      <img src="imagens/chinelo-branco.png" alt="Sandália Rasteira Branca">
-      <h3>Sandália Rasteira Branca</h3>
-      <small>Clássica e confortável</small>
-      <small class="urgency">⚠️ Últimas unidades!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Branca" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
-
-    <!-- Produto 5 -->
-    <div class="produto">
-      <img src="imagens/chinelo-preto.png" alt="Sandália Rasteira Preta">
-      <h3>Sandália Rasteira Preta</h3>
-      <small>Clássica e resistente</small>
-      <small class="urgency">⚠️ Poucas unidades!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Preta" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
-
-    <!-- Produto 6 -->
-    <div class="produto">
-      <img src="imagens/sandália-dourada.png" alt="Sandália Rasteira Dourada Luxo">
-      <h3>Sandália Rasteira Dourada Luxo</h3>
-      <small>Elegante e sofisticada</small>
-      <small class="urgency">⚠️ Estoque limitado!</small>
-      <p>R$ 29,99</p>
-      <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Rasteira Dourada Luxo" target="_blank">Comprar pelo WhatsApp</a>
-      <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
-    </div>
-
+  <!-- Produto 1 -->
+  <div class="produto">
+    <img src="loja/imagens/chinela-azul.png" alt="Chinela Azul">
+    <h3>Chinela Azul</h3>
+    <small>Leve e confortável para o dia a dia</small>
+    <small class="urgency">⚠️ Poucas unidades disponíveis!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Chinela Azul" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
   </div>
 
-  <!-- Botão fixo WhatsApp -->
-  <a href="https://wa.me/5586994987819" class="whatsapp-fixo"><i class="fab fa-whatsapp"></i></a>
+  <!-- Produto 2 -->
+  <div class="produto">
+    <img src="loja/imagens/chinela-dourada.png" alt="Chinela Dourada">
+    <h3>Chinela Dourada</h3>
+    <small>Elegante e resistente</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Chinela Dourada" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 3 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelas-variadas.png" alt="Chinelas Variadas">
+    <h3>Chinelas Variadas</h3>
+    <small>Mix de cores e estilos</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse nas Chinelas Variadas" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 4 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelinha-dourada.png" alt="Chinelinha Dourada">
+    <h3>Chinelinha Dourada</h3>
+    <small>Clássica e delicada</small>
+    <small class="urgency">⚠️ Últimas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Chinelinha Dourada" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 5 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelo-azul.png" alt="Chinelo Azul">
+    <h3>Chinelo Azul</h3>
+    <small>Leve e confortável</small>
+    <small class="urgency">⚠️ Estoque quase esgotado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse no Chinelo Azul" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 6 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelo-branco.png" alt="Chinelo Branco">
+    <h3>Chinelo Branco</h3>
+    <small>Clássico e confortável</small>
+    <small class="urgency">⚠️ Últimas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse no Chinelo Branco" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 7 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelo-preto.png" alt="Chinelo Preto">
+    <h3>Chinelo Preto</h3>
+    <small>Clássico e resistente</small>
+    <small class="urgency">⚠️ Poucas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse no Chinelo Preto" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 8 -->
+  <div class="produto">
+    <img src="loja/imagens/chinelo-rosa.png" alt="Chinelo Rosa">
+    <h3>Chinelo Rosa</h3>
+    <small>Leve e feminina</small>
+    <small class="urgency">⚠️ Estoque quase esgotado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse no Chinelo Rosa" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 9 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-azul-brilho.png" alt="Sandália Azul Brilho">
+    <h3>Sandália Azul Brilho</h3>
+    <small>Brilhante e elegante</small>
+    <small class="urgency">⚠️ Poucas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Azul Brilho" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 10 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-branca-tira.png" alt="Sandália Branca Tira">
+    <h3>Sandália Branca Tira</h3>
+    <small>Clássica e confortável</small>
+    <small class="urgency">⚠️ Últimas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Branca Tira" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 11 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-café-com-leite.png" alt="Sandália Café com Leite">
+    <h3>Sandália Café com Leite</h3>
+    <small>Elegante e casual</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Café com Leite" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 12 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-dourada.png" alt="Sandália Dourada">
+    <h3>Sandália Dourada</h3>
+    <small>Luxuosa e elegante</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Dourada" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 13 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-mrf.png" alt="Sandália MRF">
+    <h3>Sandália MRF</h3>
+    <small>Resistente e confortável</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália MRF" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 14 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-nude.png" alt="Sandália Nude">
+    <h3>Sandália Nude</h3>
+    <small>Versátil e elegante</small>
+    <small class="urgency">⚠️ Últimas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Nude" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 15 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-roso.png" alt="Sandália Roso">
+    <h3>Sandália Roso</h3>
+    <small>Leve e charmosa</small>
+    <small class="urgency">⚠️ Poucas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Roso" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 16 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-tiras-brancas.png" alt="Sandália Tiras Brancas">
+    <h3>Sandália Tiras Brancas</h3>
+    <small>Clássica e elegante</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Tiras Brancas" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 17 -->
+  <div class="produto">
+    <img src="loja/imagens/sandália-verde.png" alt="Sandália Verde">
+    <h3>Sandália Verde</h3>
+    <small>Leve, confortável e moderna</small>
+    <small class="urgency">⚠️ Estoque limitado!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse na Sandália Verde" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+  <!-- Produto 18 -->
+  <div class="produto">
+    <img src="loja/imagens/sandálias-pretas.png" alt="Sandálias Pretas">
+    <h3>Sandálias Pretas</h3>
+    <small>Clássicas e elegantes</small>
+    <small class="urgency">⚠️ Poucas unidades!</small>
+    <p>R$ 29,99</p>
+    <a href="https://wa.me/5586994987819?text=Tenho interesse nas Sandálias Pretas" target="_blank">Comprar pelo WhatsApp</a>
+    <div class="selos">✔️ Compra segura<br>✔️ Atendimento humano<br>✔️ Envio com responsabilidade</div>
+  </div>
+
+</div>
+
+<!-- Botão fixo WhatsApp -->
+<a href="https://wa.me/5586994987819" class="whatsapp-fixo"><i class="fab fa-whatsapp"></i></a>
+
 </body>
 </html>
